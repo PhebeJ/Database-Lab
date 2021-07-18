@@ -1,0 +1,14 @@
+CREATE TABLE class(
+class_id INT SERIAL PRIMARY KEY,
+class_name VARCHAR(15) NOT NULL,
+division VARCHAR(15) NOT NULL,
+st_cnt SMALLINT NOT NULL
+);
+
+CREATE TABLE student(
+st_id INT SERIAL NOT NULL PRIMARY KEY,
+st_fname VARCHAR(15) NOT NULL,
+st_lname VARCHAR(15),
+addr VARCHAR(30),
+phone INT NOT NULL,
+email VARCHAR
